@@ -1,12 +1,44 @@
 :root {
-    --color-heading: #0B0D19;
-    --color-body: #677386;
-    --color-bg-button: #3D7BFA;
-    --color-text-button: #FFF;
+  --color-heading: #0b0d19;
+  --color-body: #677386;
+  --color-bg-button: #3d7bfa;
+  --color-text-button: #fff;
 
-    /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+  /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
+  --hide-overlay: 0;
 }
 
-
 /* Begynd her... */
+
+main {
+  display: flex;
+  margin: auto;
+}
+.grid_foto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: var(--color-heading);
+}
+
+button {
+  margin: 20px;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  background-color: var(--color-bg-button);
+  color: var(--color-text-button);
+}
+
+p {
+  color: var(--color-body);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
